@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f3f4f6;
+  color: #111827;
+}
+
+.header {
+  background: #111827;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.hero {
+  height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1554284126-aa88f22d8b74");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+}
+
+.btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.danger {
+  background: #dc2626;
+}
+
+.hidden {
+  display: none;
+}
+
+.login {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  background: white;
+  padding: 30px;
+  width: 320px;
+  border-radius: 10px;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+/* ADMIN */
+.admin-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.admin-sidebar {
+  width: 220px;
+  background: #1f2937;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: #e5e7eb;
+  padding: 10px;
+  cursor: pointer;
+  text-align: left;
+  border-radius: 6px;
+}
+
+.nav-btn:hover {
+  background: #2563eb;
+  color: white;
+}
+
+.admin-content {
+  flex: 1;
+  padding: 30px;
+}
+
+.admin-sec {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+/* CLIENTE */
+.panel {
+  min-height: 100vh;
+}
+
+.cliente-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.cliente-sidebar {
+  width: 220px;
+  background: #1f2937;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cliente-sidebar button {
+  background: none;
+  border: none;
+  color: #e5e7eb;
+  padding: 10px;
+  cursor: pointer;
+  text-align: left;
+  border-radius: 6px;
+}
+
+.cliente-sidebar button:hover {
+  background: #2563eb;
+  color: white;
+}
+
+.cliente-sidebar .danger {
+  margin-top: auto;
+}
+
+.cliente-content {
+  flex: 1;
+  padding: 30px;
+}
+
+.cliente-sec {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+}

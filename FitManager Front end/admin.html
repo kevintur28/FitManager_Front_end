@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="admin-container">
+  <aside class="admin-sidebar">
+    <h3>Administrador</h3>
+  <button class="nav-btn" onclick="mostrarAdmin('adminClases')">Clases</button>
+  <button class="nav-btn" onclick="mostrarAdmin('adminClientes')">Clientes</button>
+<button class="nav-btn" onclick="mostrarAdmin('adminMembresias')">Membresías</button>
+    <button class="btn danger" onclick="logout()">Cerrar sesión</button>
+  </aside>
+
+  <main class="admin-content">
+
+  <section id="adminInicio" class="admin-sec">
+    <h2>Panel Administrador</h2>
+    <p>Gestión del sistema.</p>
+  </section>
+
+ <section id="adminClientes" class="admin-sec hidden">
+  <h2>Clientes registrados</h2>
+  <table border="1" width="100%">
+    <thead>
+      <tr>
+        <th>Email</th>
+        <th>Teléfono</th>
+        <th>Membresía</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody id="tablaClientes"></tbody>
+  </table>
+</section>
+
+
+  <section id="adminClases" class="admin-sec hidden">
+    <h2>Clases</h2>
+
+    <input id="claseNombre" type="text" placeholder="Nombre de la clase">
+    <button class="btn" onclick="agregarClase()">Agregar clase</button>
+
+    <ul id="listaClasesAdmin"></ul>
+  </section>
+
+  <section id="adminMembresias" class="admin-sec hidden">
+  <h2>Membresías disponibles</h2>
+  <ul>
+    <li>Básica - $50.000 COP</li>
+    <li>Normal - $80.000 COP</li>
+    <li>Pro - $120.000 COP</li>
+    <li>Premium - $160.000 COP</li>
+  </ul>
+</section>
+
+</main>
+
+</div>
+
+<script src="javascript/script.js"></script>
+</body>
+</html>

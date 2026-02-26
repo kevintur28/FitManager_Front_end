@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Iniciar sesión</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="header">
+  FitManager
+</header>
+
+<section class="login">
+  <div class="login-card">
+    <h2>Iniciar sesión</h2>
+
+    <input type="email" id="email" placeholder="Correo electrónico">
+    <input type="password" id="password" placeholder="Contraseña">
+
+    <button class="btn" onclick="login()">Entrar</button>
+
+    <button class="btn" onclick="window.location.href='register.html'">
+      Crear cuenta
+    </button>
+
+    <button class="btn danger" onclick="window.location.href='index.html'">
+      Volver
+    </button>
+  </div>
+</section>
+
+<script src="javascript/script.js"></script>
+</body>
+</html>
