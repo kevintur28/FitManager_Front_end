@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cliente</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="cliente-container">
+  <aside class="cliente-sidebar">
+    <h3>Cliente</h3>
+<button onclick="mostrarCliente('perfil')">Mi perfil</button>
+<button onclick="mostrarCliente('membresia')">Mi membresía</button>
+<button onclick="mostrarCliente('clases')">Clases</button>
+
+    <button class="btn danger" onclick="logout()">Cerrar sesión</button>
+  </aside>
+
+  <div class="cliente-content">
+    <section id="clienteClases" class="cliente-sec hidden">
+  <h2>Clases disponibles</h2>
+  <ul id="listaClasesCliente"></ul>
+</section>
+
+    <section id="perfil" class="cliente-sec">
+  <h2>Mi perfil</h2>
+</section>
+
+<section id="membresia" class="cliente-sec hidden">
+  <h2>Mi membresía</h2>
+</section>
+
+<section id="clases" class="cliente-sec hidden">
+  <h2>Clases disponibles</h2>
+</section>
+  </div>
+</div>
+
+<script src="javascript/script.js"></script>
+</body>
+
+    <script src="https://cdn.botpress.cloud/webchat/v3.5/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2025/08/15/12/20250815120426-M2R9G0NK.js" defer></script>
+</html>
